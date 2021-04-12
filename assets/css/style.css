@@ -1444,7 +1444,7 @@ blockquote {
   .animation-element.slide-left.testimonial:nth-of-type(odd),
   .animation-element.slide-left.testimonial:nth-of-type(even){
     width: 100%;
-    margin: 0px 0px 20px 0px;
+    /* margin: 0px 0px 20px 0px; */
   }
   .animation-element.slide-left.testimonial .right,
   .animation-element.slide-left.testimonial .left,
@@ -1454,8 +1454,8 @@ blockquote {
     float: none;
   }
   .animation-element.slide-left.testimonial img{
-    width: 85px;
-    height: 85px;
+    width: 60px;
+    height: 60px;
     margin-bottom: 5px;
   }
   

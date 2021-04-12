@@ -140,5 +140,9 @@
     loop: true,
     items: 1
   });
+  //to be removed/fixed
+  if($("#slider").length) {
+    $('#footer').css('position', 'relative');
+  }
 
 })(jQuery);
