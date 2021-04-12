@@ -101,7 +101,7 @@
       <!-- ======= Portfolio Section ======= -->
       <div id="upcoming-shows" class="paddsection">
 
-          <div class="container">
+          <div class="container" style="display: flex;">
               <div class="section-title animation-element-bio bounce-up">
                   <h1 id="upcoming-shows-header" class="subject">Nastupi</h1>
               </div>
@@ -137,7 +137,7 @@
       <div class="skew">
           <span></span>
       </div>
-      <div class="container">
+      <div class="container" style="display: flex; flex-direction: column;">
         <div class="section-title animation-element-bio bounce-up">
             <h1 id="upcoming-shows-header" class="subject">Biografija</h1>
         </div>
