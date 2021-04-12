@@ -47,12 +47,13 @@
   // ========================================================================= //
 
   $(window).scroll(function() {
-    var scroll = $(window).scrollTop();
+    // var scroll = $(window).scrollTop();
+    var currentScrollPos = window.pageYOffset;
     if (!$('.subpage-nav').length) {
-      if (scroll > 750) {
-        $("#main-nav").slideDown(700);
+      if (currentScrollPos > 20) {
+        $("#main-nav").slideDown(500);
       } else {
-        $("#main-nav").slideUp(700);
+        $("#main-nav").slideUp(500);
       }
     }
   });
