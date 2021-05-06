@@ -47,6 +47,7 @@
   // ========================================================================= //
 
   $(window).scroll(function() {
+    // var scroll = $(window).scrollTop();
     var currentScrollPos = window.pageYOffset;
     if (!$('.subpage-nav').length) {
       if (currentScrollPos > 20) {

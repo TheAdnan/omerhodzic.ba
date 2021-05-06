@@ -966,6 +966,10 @@ blockquote {
   padding-bottom: 50px;
 }
 
+#footer {
+  background: #fff;
+}
+
 #footer .socials-media {
   width: 100%;
 }

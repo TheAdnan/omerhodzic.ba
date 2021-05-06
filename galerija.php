@@ -33,7 +33,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,500,500i,600,600i,700,700i,900,900i" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/hover/hover.min.css" rel="stylesheet">
   <link href="assets/vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
@@ -43,7 +45,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
+  <link href="assets/css/carousel.css" rel="stylesheet">
   <!-- =======================================================
   * Template Name: Folio - v2.2.1
   * Template URL: https://bootstrapmade.com/folio-bootstrap-portfolio-template/
@@ -52,60 +54,15 @@
   ======================================================== -->
 </head>
 
-<style>
-    .slider-item img {
-        max-width: 100vw;
-        height: auto;
-    }
-
-    .slider .slider-item{
-        display: none;
-        animation: reveal .5s ease-in-out;
-    }
-    .slider .slider-item.active {
-        display: block;
-    }
-    .slider .dots {
-        text-align: center;
-        padding: 10px;
-    }
-    .slider .dots li {
-        cursor: pointer;
-        display: inline-block;
-        background: #333;
-        color: #fff;
-        padding: 7px 11px;
-        line-height: .5;
-        border-radius: 50%;
-        text-indent: -9999px;
-        opacity: .5;
-        -webkit-transition: opacity .2s;
-        -o-transition: opacity .2s;
-        transition: opacity .2s;
-    }
-    .slider .dots li.active{
-        opacity: 1;
-    }
-    @keyframes reveal{
-        from{
-            opacity: 0;
-        }
-        to{
-            opacity: 1;
-        }
-    }
-
-</style>
-
 <body>
 
   <!-- ======= Navbar ======= -->
-  <nav id="main-nav">
+  <nav id="main-nav-const">
     <div class="row">
       <div class="container">
 
         <div class="logo">
-          <a href="index.php"><img src="assets/img/logo.png" alt="logo"></a>
+          <a href="index.php"><img src="assets/img/favicons/logo.png" alt="logo"></a>
         </div>
 
         <div class="responsive"><i data-icon="m" class="ion-navicon-round"></i></div>
@@ -124,7 +81,7 @@
   </nav><!-- End Navbar -->
   <main id="main">
       <div id="container">
-          <div id="slider" class="slider">
+          <div class="gallery-container" style="padding-top: 10%;">
               <?php
                   $directory = "assets/img/photo";
                   $ext = "/*.jpg";
@@ -132,24 +89,20 @@
 
                   foreach($images as $index => $image)
                   {
-                      if ($index == 0) {
-                          echo '<div class="slider-item active"><img src="' . $image . '" class="img-fluid"></div>';
-                      }
-                      else {
-                          echo '<div class="slider-item"><img src="' . $image . '" class="img-fluid"></div>';
-                      }
+                      echo '<div class="gallery-item" data-index="' . ++$index . '">
+                              <img src="' . $image . '?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb">
+                          </div>';
                   }
               ?>
-              <ul id="dots" class="list-inline dots"></ul>
           </div>
       </div>
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <div id="footer" class="text-center">
+  <div id="footer-alt" class="text-center">
       <div class="container">
           <div class="socials-media text-center">
-              <img src="assets/img/logo-alt.png" width="200" alt="logo">
+              <img src="assets/img/favicons/logo.png" width="200" alt="logo">
           </div>
 
           <p style="display: none;">&copy; Copyrights Test. All rights reserved.</p>
@@ -179,29 +132,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-    <script>
-        var slider = document.getElementById('slider')
-        var sliderItem = slider.getElementsByTagName('div');
-        var dots = document.getElementById('dots');
-        var dotsChild = document.getElementById('dots').getElementsByTagName('li');
-        for (i = 0; i < sliderItem.length; i++) {
-            dots.appendChild(document.createElement('li'));
-            dotsChild[i].classList.add('list-inline-item');
-            dotsChild[i].setAttribute("id", i);
-            dotsChild[i].innerHTML = i;
-            dotsChild[0].classList.add('active');
-            dotsChild[i].addEventListener("click", runSlider);
-        }
-        function runSlider(){
-            var dnum = this.getAttribute("id");
-            for (i = 0; i < sliderItem.length; i++) {
-                sliderItem[i].classList.remove('active');
-                sliderItem[dnum].classList.add('active');
-                dotsChild[i].classList.remove('active');
-                dotsChild[dnum].classList.add('active');
-            }
-        }
-    </script>
+  <script src="assets/js/carousel.js"></script>
 </body>
 
 </html>
