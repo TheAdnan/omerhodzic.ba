@@ -146,29 +146,23 @@
 
   <!-- ======= Footer ======= -->
   <div id="footer" class="text-center">
-    <div class="container">
-      <div class="socials-media text-center">
+      <div class="container">
+          <div class="socials-media text-center">
+              <img src="assets/img/logo-alt.png" width="200" alt="logo">
+          </div>
 
-        <ul class="list-unstyled">
-          <li><a href="#"><i class="ion-social-facebook"></i></a></li>
-          <li><a href="#"><i class="ion-social-instagram"></i></a></li>
-        </ul>
+          <p style="display: none;">&copy; Copyrights Test. All rights reserved.</p>
+          <div class="credits" style="display: none">
+              <!--
+              All the links in the footer should remain intact.
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Folio
+            -->
+              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div>
 
       </div>
-
-      <p style="display: none">&copy; Copyrights Folio. All rights reserved.</p>
-
-      <div class="credits" style="display: none">
-        <!--
-        All the links in the footer should remain intact.
-        You can delete the links only if you purchased the pro version.
-        Licensing information: https://bootstrapmade.com/license/
-        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Folio
-      -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-
-    </div>
   </div><!-- End Footer -->
 
   <!-- Vendor JS Files -->

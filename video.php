@@ -85,16 +85,10 @@
 <div id="footer" class="text-center">
     <div class="container">
         <div class="socials-media text-center">
-
-            <ul class="list-unstyled">
-                <li><a href="#"><i class="ion-social-facebook"></i></a></li>
-                <li><a href="#"><i class="ion-social-instagram"></i></a></li>
-            </ul>
-
+            <img src="assets/img/logo-alt.png" width="200" alt="logo">
         </div>
 
-        <p style="display: none">&copy; Copyrights Folio. All rights reserved.</p>
-
+        <p style="display: none;">&copy; Copyrights Test. All rights reserved.</p>
         <div class="credits" style="display: none">
             <!--
             All the links in the footer should remain intact.

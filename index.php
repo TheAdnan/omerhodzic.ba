@@ -61,7 +61,7 @@
       <div class="container">
 
         <div class="logo">
-          <a href="index.php"><img src="assets/img//logo.png" alt="logo"></a>
+          <a href="index.php"><img src="assets/img/logo.png" alt="logo"></a>
         </div>
 
         <div class="responsive"><i data-icon="m" class="ion-navicon-round"></i></div>
@@ -176,7 +176,7 @@
         <div class="contact-block1">
           <div class="row">
 
-            <div class="col-lg-6">
+            <div class="col-lg-12">
               <div class="contact-contact">
 
                 <h2 class="mb-30" style="text-transform: uppercase">Javi se, nemoj se stidit</h2>
@@ -187,45 +187,6 @@
                 </ul>
 
               </div>
-            </div>
-
-            <div class="col-lg-6">
-              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                <div class="row">
-
-                  <div class="col-lg-6">
-                    <div class="form-group contact-block1">
-                      <input type="text" name="name" class="form-control" id="name" placeholder="Ime" data-rule="required" data-msg="Unesite ime" />
-                      <div class="validate"></div>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-6">
-                    <div class="form-group">
-                      <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email" data-msg="Unesite email" />
-                      <div class="validate"></div>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-12">
-                    <div class="form-group">
-                      <textarea class="form-control" name="message" rows="12" data-rule="required" data-msg="Napišite sadržaj vaše poruke ovdje" placeholder="Poruka"></textarea>
-                      <div class="validate"></div>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-12 mb-3">
-                    <div class="loading">Sekunda</div>
-                    <div class="error-message">Greška pri slanju emaila</div>
-                    <div class="sent-message">Vaš email je uspješno poslan</div>
-                  </div>
-
-                  <div class="col-lg-12">
-                    <input type="submit" class="btn btn-defeault btn-send" value="Pošalji poruku">
-                  </div>
-
-                </div>
-              </form>
             </div>
           </div>
         </div>
@@ -238,16 +199,10 @@
   <div id="footer" class="text-center">
     <div class="container">
       <div class="socials-media text-center">
-
-        <ul class="list-unstyled">
-          <li><a href="#"><i class="ion-social-facebook"></i></a></li>
-          <li><a href="#"><i class="ion-social-instagram"></i></a></li>
-        </ul>
-
+          <img src="assets/img/logo-alt.png" width="200" alt="logo">
       </div>
 
-      <p style="display: block">&copy; Copyrights Test. All rights reserved.</p>
-
+      <p style="display: none;">&copy; Copyrights Test. All rights reserved.</p>
       <div class="credits" style="display: none">
         <!--
         All the links in the footer should remain intact.

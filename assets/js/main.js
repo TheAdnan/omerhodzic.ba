@@ -47,11 +47,9 @@
   // ========================================================================= //
 
   $(window).scroll(function() {
-    // var scroll = $(window).scrollTop();
     var currentScrollPos = window.pageYOffset;
-    var hero = $('#hero').outerHeight();
     if (!$('.subpage-nav').length) {
-      if (currentScrollPos > hero) { //ooor > 20, this is just an idea
+      if (currentScrollPos > 20) {
         $("#main-nav").slideDown(500);
       } else {
         $("#main-nav").slideUp(500);
