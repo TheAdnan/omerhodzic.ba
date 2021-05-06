@@ -10,22 +10,22 @@
   <meta content="omer,hodzic,standup,comedy,komedija" name="keywords">
 
   <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="assets/img/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
-    <link rel="manifest" href="assets/img/manifest.json">
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/img/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favicons/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="assets/img/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="assets/img/favicons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
   <!-- Google Fonts -->
@@ -61,7 +61,7 @@
       <div class="container">
 
         <div class="logo">
-          <a href="index.php"><img src="assets/img/logo.png" alt="logo"></a>
+          <a href="index.php"><img src="assets/img/favicons/logo.png" alt="logo"></a>
         </div>
 
         <div class="responsive"><i data-icon="m" class="ion-navicon-round"></i></div>
@@ -118,12 +118,12 @@
                         $date = date('Y-m-d', strtotime($nastup[0]));
                         if ($date > date('Y-m-d')) {
                             $empty = false;
-                            echo '<div class="col-md-12"><p class="upcoming-show animation-element slide-left testimonial"><img src="assets/img/microphone.png"><span>   ' . $nastup[0] . ' </span><span style="font-weight: bolder"> - ' . $nastup[1] . ' </span><span style="font-weight: lighter"> (' . $nastup[2] . ') </span></p></div>';
+                            echo '<div class="col-md-12"><p class="upcoming-show animation-element slide-left testimonial"><img src="assets/img/favicons/microphone.png"><span>   ' . $nastup[0] . ' </span><span style="font-weight: bolder"> - ' . $nastup[1] . ' </span><span style="font-weight: lighter"> (' . $nastup[2] . ') </span></p></div>';
                         }
                     }
 
                     if ($empty) {
-                        echo '<div class="col-md-12"><p class="upcoming-show animation-element slide-left testimonial"><img src="assets/img/microphone.png"><span> Trenutno nema najavljenih nastupa </span></p></div>';
+                        echo '<div class="col-md-12"><p class="upcoming-show animation-element slide-left testimonial"><img src="assets/img/favicons/microphone.png"><span> Trenutno nema najavljenih nastupa </span></p></div>';
                     }
 
                     fclose($file);
@@ -153,7 +153,7 @@
         <div class="col-lg-5">
             <div class="div-img-bg">
                 <div class="about-img">
-                    <img src="assets/img/bio.JPG" class="img-responsive" alt="me">
+                    <img src="assets/img/bio.jpg" class="img-responsive" alt="me">
                 </div>
             </div>
         </div>
@@ -199,7 +199,7 @@
   <div id="footer" class="text-center">
     <div class="container">
       <div class="socials-media text-center">
-          <img src="assets/img/logo-alt.png" width="200" alt="logo">
+          <img src="assets/img/favicons/logo-alt.png" width="200" alt="logo">
       </div>
 
       <p style="display: none;">&copy; Copyrights Test. All rights reserved.</p>
