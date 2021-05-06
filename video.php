@@ -55,12 +55,12 @@
 <body style="background: black">
 
 <!-- ======= Navbar ======= -->
-<nav id="main-nav">
+<nav id="main-nav-const">
     <div class="row">
         <div class="container">
 
             <div class="logo">
-                <a href="index.php"><img src="assets/img//logo.png" alt="logo"></a>
+                <a href="index.php"><img src="assets/img/favicons/logo.png" alt="logo"></a>
             </div>
 
             <div class="responsive"><i data-icon="m" class="ion-navicon-round"></i></div>
@@ -78,24 +78,26 @@
     </div>
 </nav><!-- End Navbar -->
 <main id="main">
-
+    <div class="row">
+        <div class="col-md-12" style="text-align:center; padding-top: 10%">
+            <h3>Nastup u OKC Abrašević</h3>
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_swcDebNawM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br><br>
+        </div>
+        <div class="col-md-12" style="text-align:center;">
+            <h3>Omer Hodžić u Skečevima</h3>
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/y03AnUrqML0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
 </main><!-- End #main -->
 
 <!-- ======= Footer ======= -->
-<div id="footer" class="text-center">
+<div id="footer" class="text-center" style="background-color: black">
     <div class="container">
-        <div class="socials-media text-center">
-            <img src="assets/img/logo-alt.png" width="200" alt="logo">
-        </div>
-
         <p style="display: none;">&copy; Copyrights Test. All rights reserved.</p>
         <div class="credits" style="display: none">
-            <!--
-            All the links in the footer should remain intact.
-            You can delete the links only if you purchased the pro version.
-            Licensing information: https://bootstrapmade.com/license/
-            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Folio
-          -->
             Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
         </div>
 

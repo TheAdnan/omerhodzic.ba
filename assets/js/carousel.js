@@ -57,5 +57,3 @@ function closeLightBox(e) {
     }
 }
 lightBoxContainer.addEventListener("click", closeLightBox);
-
-$('#main-nav-const').show();
